@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" name="viewport"/>
+<title>Heather Regent Family Charitable Foundation</title>
+<meta content="Heather Regent Family Charitable Foundation – registered charity awaiting its first contribution to begin supporting other registered charities across Canada." name="description"/>
+<meta content="Heather Regent Family Charitable Foundation" property="og:title"/>
+<meta content="Registered charity awaiting its first contribution to begin supporting other registered charities across Canada." property="og:description"/>
+<meta content="https://images.pexels.com/photos/347139/pexels-photo-347139.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" property="og:image"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Heather Regent Family Charitable Foundation" name="twitter:title"/>
+<meta content="Registered charity awaiting its first contribution to begin supporting other registered charities across Canada." name="twitter:description"/>
+<meta content="https://images.pexels.com/photos/347139/pexels-photo-347139.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" name="twitter:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&amp;family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root {
+      --primary: #2C3E50;
+      --secondary: #7F8C8D;
+      --accent: #D4AC0D;
+      --text: #1C2833;
+      --background: #F4F6F7;
+      --muted-bg: #EAECEE;
+      --heading-font: 'Playfair Display', serif;
+      --body-font: 'Lato', sans-serif;
+      --shadow-sm: 0 1px 3px rgba(44, 62, 80, 0.06);
+      --shadow-md: 0 4px 12px rgba(44, 62, 80, 0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--body-font);
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 200px 200px;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    
+    .identity-bar {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(244, 246, 247, 0.92);
+      backdrop-filter: blur(4px);
+      border-bottom: 1px solid rgba(44, 62, 80, 0.06);
+      padding: 12px 0;
+    }
+
+    .identity-bar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .identity-name {
+      font-family: var(--heading-font);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--primary);
+      letter-spacing: -0.01em;
+    }
+
+    .identity-links {
+      display: flex;
+      gap: 24px;
+      font-size: 0.9rem;
+    }
+
+    .identity-links a {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: 400;
+      transition: color 0.2s;
+    }
+
+    .identity-links a:hover {
+      color: var(--primary);
+    }
+
+    
+    .proof-strip {
+      background: var(--muted-bg);
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(44, 62, 80, 0.04);
+    }
+
+    .proof-strip .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 28px;
+      align-items: center;
+      font-size: 0.85rem;
+      color: var(--secondary);
+    }
+
+    .proof-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .proof-item strong {
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .proof-item a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 500;
+    }
+
+    
+    .hero {
+      position: relative;
+      min-height: 90vh;
+      display: flex;
+      align-items: flex-end;
+      padding: 80px 0 100px;
+      background: var(--primary);
+      margin-bottom: 0;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('https://images.pexels.com/photos/347139/pexels-photo-347139.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+      background-size: cover;
+      background-position: center 30%;
+      opacity: 0.35;
+      mix-blend-mode: luminosity;
+      filter: saturate(0.4) contrast(1.1);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(44,62,80,0.7) 0%, rgba(44,62,80,0.2) 80%);
+      pointer-events: none;
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    @media (min-width: 768px) {
+      .hero .container {
+        grid-template-columns: 3fr 2fr;
+        align-items: end;
+      }
+    }
+
+    .hero-headline {
+      font-family: var(--heading-font);
+      font-size: clamp(2.4rem, 8vw, 4.2rem);
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      max-width: 800px;
+    }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.8);
+      margin-top: 16px;
+      max-width: 540px;
+      line-height: 1.5;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      align-items: flex-start;
+      padding-bottom: 8px;
+    }
+
+    @media (min-width: 768px) {
+      .hero-actions {
+        align-items: flex-end;
+        text-align: right;
+      }
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      font-family: var(--body-font);
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      background: transparent;
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #fff;
+      text-transform: uppercase;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #1C2833;
+    }
+
+    .btn-primary:hover {
+      background: #c09c0b;
+      border-color: #c09c0b;
+    }
+
+    .btn-outline {
+      border: 1px solid rgba(255,255,255,0.5);
+      color: #fff;
+    }
+
+    .btn-outline:hover {
+      background: rgba(255,255,255,0.08);
+      border-color: #fff;
+    }
+
+    
+    section {
+      padding: 120px 0;
+    }
+
+    .section-label {
+      font-family: var(--heading-font);
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--secondary);
+      margin-bottom: 12px;
+      font-weight: 400;
+    }
+
+    .section-title {
+      font-family: var(--heading-font);
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 600;
+      color: var(--primary);
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+
+    .section-desc {
+      font-size: 1rem;
+      color: var(--secondary);
+      max-width: 640px;
+      line-height: 1.6;
+    }
+
+    
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .about-grid {
+        grid-template-columns: 1fr 1.1fr;
+        gap: 64px;
+      }
+    }
+
+    .about-text p {
+      margin-bottom: 20px;
+      color: var(--text);
+      font-weight: 300;
+      font-size: 1.05rem;
+    }
+
+    .about-image {
+      background: var(--muted-bg);
+      border-radius: 2px;
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: transform 0.3s ease;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      display: block;
+      filter: saturate(0.7) contrast(1.05);
+    }
+
+    .why-list {
+      list-style: none;
+      margin-top: 24px;
+    }
+
+    .why-list li {
+      padding: 8px 0 8px 28px;
+      position: relative;
+      font-weight: 300;
+      border-bottom: 1px solid rgba(44,62,80,0.04);
+    }
+
+    .why-list li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: 400;
+    }
+
+    
+    .program-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    @media (min-width: 600px) {
+      .program-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 960px) {
+      .program-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+
+    .program-card {
+      background: #fff;
+      padding: 32px 24px;
+      border-top: 4px solid var(--accent);
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.2s, transform 0.2s;
+      position: relative;
+    }
+
+    .program-card:nth-child(2) { margin-top: 24px; }
+    .program-card:nth-child(4) { margin-top: 16px; }
+
+    @media (max-width: 600px) {
+      .program-card:nth-child(2),
+      .program-card:nth-child(4) { margin-top: 0; }
+    }
+
+    .program-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .program-card h3 {
+      font-family: var(--heading-font);
+      font-size: 1.2rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .program-card p {
+      font-size: 0.95rem;
+      color: var(--secondary);
+      font-weight: 300;
+    }
+
+    
+    .timeline {
+      margin-top: 56px;
+      position: relative;
+      padding: 20px 0;
+    }
+
+    .timeline-line {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: var(--secondary);
+      opacity: 0.3;
+      transform: translateY(-50%);
+    }
+
+    .timeline-nodes {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      flex-wrap: wrap;
+      gap: 24px 0;
+    }
+
+    .timeline-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      flex: 1 0 120px;
+      position: relative;
+    }
+
+    .node-circle {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #fff;
+      border: 2px solid var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--heading-font);
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      background: var(--background);
+      position: relative;
+      z-index: 2;
+    }
+
+    .node-label {
+      font-size: 0.85rem;
+      color: var(--secondary);
+      max-width: 100px;
+      font-weight: 300;
+    }
+
+    
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-top: 40px;
+    }
+
+    @media (min-width: 640px) {
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    @media (min-width: 960px) {
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      background: var(--muted-bg);
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+      filter: saturate(0.8) contrast(1.02);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.02);
+    }
+
+    .gallery-item:nth-child(1) { grid-row: span 2; }
+    .gallery-item:nth-child(4) { grid-row: span 2; }
+
+    @media (max-width: 640px) {
+      .gallery-item:nth-child(1),
+      .gallery-item:nth-child(4) { grid-row: span 1; }
+    }
+
+    
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(28,40,51,0.92);
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s;
+    }
+
+    .lightbox.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .lightbox img {
+      max-width: 90vw;
+      max-height: 85vh;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      border-radius: 2px;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 24px;
+      right: 32px;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-weight: 300;
+    }
+
+    
+    .cta-section {
+      background: var(--primary);
+      background-image: url('https://images.pexels.com/photos/4399499/pexels-photo-4399499.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+      background-size: cover;
+      background-position: center 40%;
+      background-blend-mode: overlay;
+      background-color: rgba(44,62,80,0.75);
+      padding: 100px 0;
+      text-align: center;
+      color: #fff;
+    }
+
+    .cta-section .section-title {
+      color: #fff;
+    }
+
+    .cta-section .section-desc {
+      color: rgba(255,255,255,0.8);
+      margin: 0 auto 32px;
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    
+    .contact-details {
+      background: #fff;
+      padding: 80px 0;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+    @media (min-width: 700px) {
+      .contact-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .contact-info p {
+      margin-bottom: 12px;
+      font-weight: 300;
+    }
+
+    .contact-info a {
+      color: var(--primary);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .contact-info a[href^="tel"] {
+      font-weight: 400;
+    }
+
+    
+    .site-footer {
+      padding: 32px 0;
+      border-top: 1px solid rgba(44,62,80,0.06);
+      font-size: 0.8rem;
+      color: var(--secondary);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .site-footer a {
+      color: var(--secondary);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .site-footer a:hover {
+      color: var(--primary);
+    }
+
+    
+    .text-accent {
+      color: var(--accent);
+    }
+
+    .mt-24 { margin-top: 24px; }
+    .mb-8 { margin-bottom: 8px; }
+
+    
+    .program-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .program-card::after {
+      content: "🌱";
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      font-size: 4rem;
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+      transform: rotate(12deg);
+    }
+
+    .program-card:hover::after {
+      opacity: 0.08;
+    }
+
+    
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .fade-in { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+<header class="identity-bar">
+<div class="container">
+<span class="identity-name">Heather Regent Family Charitable Foundation</span>
+<div class="identity-links">
+<a href="#about">About</a>
+<a href="#programs">Programs</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</header>
+<div class="proof-strip">
+<div class="container">
+<span class="proof-item"><strong>Registered charity</strong> · Canada</span>
+<span class="proof-item"><strong>Toronto, ON</strong></span>
+<span class="proof-item"><strong>#</strong> awaiting first contribution</span>
+<span class="proof-item"><a href="https://apps.cra-arc.gc.ca/ebci/hacc/srch/pub/dsplyBscSrch?requestedPage=1&amp;selectedCharityBn=000000000RR0001" rel="noopener" target="_blank">Source record (CRA)</a></span>
+</div>
+</div>
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="hero-overlay"></div>
+<div class="container">
+<div>
+<h1 class="hero-headline">A Foundation for Tomorrow</h1>
+<p class="hero-sub">Registered charity awaiting its first contribution to begin supporting other registered charities.</p>
+</div>
+<div class="hero-actions">
+<a class="btn btn-primary" href="#about">Read the Summary</a>
+<a class="btn btn-outline" href="https://apps.cra-arc.gc.ca/ebci/hacc/srch/pub/dsplyBscSrch?requestedPage=1&amp;selectedCharityBn=000000000RR0001" rel="noopener" target="_blank">Check Source Record</a>
+</div>
+</div>
+</section>
+<section class="fade-in" id="about">
+<div class="container">
+<div class="about-grid">
+<div class="about-text">
+<span class="section-label">About the Foundation</span>
+<h2 class="section-title">Purpose &amp; record</h2>
+<p>Heather Regent Family Charitable Foundation was registered as a charitable organization effective February 17, 2024. Our purpose is to receive and maintain a fund or funds and to apply all or part of the principal and income therefrom from time to time to charitable organizations that are also registered charities under the Income Tax Act (Canada). The charity was inactive during its first year as it was waiting for the initial contribution to be received in 2025.</p>
+<ul class="why-list">
+<li>Registered charity with a clear purpose to support other registered charities.</li>
+<li>Transparent operations with public records available.</li>
+<li>Focused on deliberate, long-term charitable giving.</li>
+</ul>
+<p style="margin-top:20px;font-size:0.9rem;color:var(--secondary);">Based in Toronto, ON, Canada. We support registered charities across Canada.</p>
+</div>
+<div class="about-image">
+<img alt="open notebook on desk" height="800" loading="lazy" src="https://images.pexels.com/photos/10396320/pexels-photo-10396320.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/>
+</div>
+</div>
+</div>
+</section>
+<section class="fade-in" id="programs" style="background:var(--muted-bg);">
+<div class="container">
+<span class="section-label">Our Programs</span>
+<h2 class="section-title">Program snapshot</h2>
+<p class="section-desc">We are currently in our first year, awaiting initial contributions to begin grant-making.</p>
+<div class="program-grid">
+<div class="program-card">
+<h3>Grant-Making Program</h3>
+<p>Once funded, we will distribute income to registered charities under the Income Tax Act.</p>
+</div>
+<div class="program-card">
+<h3>Fund Management</h3>
+<p>We receive and maintain a fund or funds for charitable purposes.</p>
+</div>
+<div class="program-card">
+<h3>Donor Contributions</h3>
+<p>Contributions to our foundation will be used to support other charitable organizations.</p>
+</div>
+<div class="program-card">
+<h3>Public Accountability</h3>
+<p>We maintain transparency through public registration and annual filings.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="fade-in">
+<div class="container">
+<span class="section-label">How it unfolds</span>
+<h2 class="section-title">Next steps</h2>
+<p class="section-desc" style="margin-bottom:8px;">A quiet timeline of future generosity.</p>
+<div class="timeline">
+<div class="timeline-line"></div>
+<div class="timeline-nodes">
+<div class="timeline-node">
+<div class="node-circle">1</div>
+<span class="node-label">Registration</span>
+</div>
+<div class="timeline-node">
+<div class="node-circle">2</div>
+<span class="node-label">First contribution</span>
+</div>
+<div class="timeline-node">
+<div class="node-circle">3</div>
+<span class="node-label">Fund allocation</span>
+</div>
+<div class="timeline-node">
+<div class="node-circle">4</div>
+<span class="node-label">Grant-making</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="fade-in" style="background:var(--muted-bg);">
+<div class="container">
+<span class="section-label">Field notes</span>
+<h2 class="section-title">Quiet images</h2>
+<div class="gallery-grid" id="gallery">
+<div class="gallery-item"><img alt="window light" height="800" loading="lazy" src="https://images.pexels.com/photos/18890870/pexels-photo-18890870.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/></div>
+<div class="gallery-item"><img alt="flower in vase" height="800" loading="lazy" src="https://images.pexels.com/photos/7602824/pexels-photo-7602824.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/></div>
+<div class="gallery-item"><img alt="pen on paper" height="800" loading="lazy" src="https://images.pexels.com/photos/356390/pexels-photo-356390.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/></div>
+<div class="gallery-item"><img alt="green door archway" height="800" loading="lazy" src="https://images.pexels.com/photos/37624127/pexels-photo-37624127.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" width="1200"/></div>
+</div>
+</div>
+</section>
+<section class="cta-section fade-in">
+<div class="container">
+<h2 class="section-title">Support the foundation</h2>
+<p class="section-desc">Contributions to our fund enable future support for charitable organizations across Canada.</p>
+<div class="cta-buttons">
+<a class="btn btn-primary" href="#contact">Contact &amp; records</a>
+<a class="btn btn-outline" href="https://apps.cra-arc.gc.ca/ebci/hacc/srch/pub/dsplyBscSrch?requestedPage=1&amp;selectedCharityBn=000000000RR0001" rel="noopener" target="_blank">View CRA record</a>
+</div>
+</div>
+</section>
+<section class="contact-details fade-in" id="contact">
+<div class="container">
+<span class="section-label">Contact &amp; records</span>
+<h2 class="section-title">Get in touch</h2>
+<div class="contact-grid">
+<div class="contact-info">
+<p><strong>Heather Regent Family Charitable Foundation</strong></p>
+<p>1212 - 150 YORK ST<br/>TORONTO, ON</p>
+<p><a href="tel:+14163649447">(416) 364-9447</a></p>
+<p style="margin-top:20px;font-size:0.9rem;color:var(--secondary);">Public registration: <a href="https://apps.cra-arc.gc.ca/ebci/hacc/srch/pub/dsplyBscSrch?requestedPage=1&amp;selectedCharityBn=000000000RR0001" rel="noopener" target="_blank">CRA source record</a></p>
+<p style="font-size:0.9rem;color:var(--secondary);">Registered charity · Canada</p>
+</div>
+<div>
+<p style="font-weight:300;margin-bottom:16px;">What happens next? Use the contact details above to reach out. Share which program you are interested in, or ask about contributions. We will confirm the best next step.</p>
+<ul style="list-style:none;font-weight:300;font-size:0.95rem;">
+<li style="padding:6px 0;">— Grant-Making Program</li>
+<li style="padding:6px 0;">— Fund Management</li>
+<li style="padding:6px 0;">— Donor Contributions</li>
+<li style="padding:6px 0;">— Public Accountability</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<footer class="container site-footer">
+<span>© <span id="year"></span> Heather Regent Family Charitable Foundation</span>
+<span>Images: <a href="https://www.pexels.com/photo/brown-wooden-panel-347139/" rel="noopener" target="_blank">Tirachard Kumtanom</a>, <a href="https://www.pexels.com/photo/blank-notebook-on-a-table-10396320/" rel="noopener" target="_blank">MESSALA CIULLA</a>, <a href="https://www.pexels.com/photo/person-holding-green-plant-4399499/" rel="noopener" target="_blank">Ravi Kant</a>, <a href="https://www.pexels.com/photo/close-up-shot-of-a-jar-with-coins-9755390/" rel="noopener" target="_blank">Towfiqu barbhuiya</a>, <a href="https://www.pexels.com/photo/close-up-photo-of-red-pins-on-a-calendar-9810172/" rel="noopener" target="_blank">Towfiqu barbhuiya</a>, <a href="https://www.pexels.com/photo/person-in-gray-long-sleeves-writing-on-a-notebook-6962951/" rel="noopener" target="_blank">Cup of Couple</a>, <a href="https://www.pexels.com/photo/vintage-curtain-by-the-window-18890870/" rel="noopener" target="_blank">Zülfü Demir</a>, <a href="https://www.pexels.com/photo/an-anthurium-in-a-vase-7602824/" rel="noopener" target="_blank">Kaboompics</a>, <a href="https://www.pexels.com/photo/brown-and-black-pen-on-paper-356390/" rel="noopener" target="_blank">Pixabay</a>, <a href="https://www.pexels.com/photo/parnu-jaagupi-archway-with-green-painted-doors-37624127/" rel="noopener" target="_blank">Cristy Birdie</a> · Pexels</span>
+<a href="https://apps.cra-arc.gc.ca/ebci/hacc/srch/pub/dsplyBscSrch?requestedPage=1&amp;selectedCharityBn=000000000RR0001" rel="noopener" target="_blank">source record</a>
+</footer>
+<div class="lightbox" id="lightbox">
+<button class="lightbox-close" id="lightboxClose">✕</button>
+<img alt="Organization photo" height="800" id="lightboxImg" src="" width="1200"/>
+</div>
+<script>
+  (function() {
+    // dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // scroll fade
+    const faders = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+    faders.forEach(el => observer.observe(el));
+
+    // lightbox
+    const gallery = document.getElementById('gallery');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const closeBtn = document.getElementById('lightboxClose');
+
+    gallery.addEventListener('click', (e) => {
+      const img = e.target.closest('img');
+      if (!img) return;
+      lightboxImg.src = img.src;
+      lightbox.classList.add('open');
+    });
+
+    closeBtn.addEventListener('click', () => lightbox.classList.remove('open'));
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) lightbox.classList.remove('open');
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') lightbox.classList.remove('open');
+    });
+  })();
+</script>
+</body>
+</html>
